@@ -53,6 +53,7 @@ body {
 
 .box {
   position: relative;
+  top: 122px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -66,12 +67,17 @@ body {
   align-items: center;
   justify-content: flex-end;
   margin-top: 30px;
+  position: absolute;
 }
 
 .numero {
   width: 137px;
-  height: 75px;
+  height: 64px;
   display: flex;
+  position: relative;
+  top: -24px;
+  right: -165px;
+  z-index: 1000;
   padding: 5px 10px 0;
   align-items: center;
   justify-content: flex-end;
@@ -79,6 +85,8 @@ body {
   background-color: #ff824c;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
   color: #ffffff;
   position: relative;
 }
@@ -143,11 +151,44 @@ body {
 }
 
 @media (max-width: 425px) {
+  .container {
+    width: 250px;
+    height: 460px;
+  }
+
+  .subContainer {
+    width: 233px;
+    height: 438px;
+  }
+
+  .box {
+    top: 90px;
+  }
+
   .subContainer::after {
-    top: 424px;
-    right: 100px;
+    top: 396px;
+    right: 49px;
     transform: skew(0deg, 0deg);
     transform: rotate(45deg);
     background-color: #00356f;
+  }
+
+  .numero {
+    width: 128px;
+    height: 61px;
+    display: flex;
+    position: relative;
+    top: -24px;
+    right: -128px;
+    justify-content: center;
+  }
+
+  .numero h4 {
+    left: 9px;
+  }
+
+  .descricao p {
+    text-indent: 30px;
+    font-size: 14px;
   }
 }

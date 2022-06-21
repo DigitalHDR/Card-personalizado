@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Baloo Da 2', cursive;
+}
+
+.container {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  border-bottom-right-radius: 70px;
+  border-top-left-radius: 70px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: -webkit-linear-gradient(
+    29deg,
+    #a699ef 0%,
+    #6655bd 70%,
+    #6655bd 100%
+  );
+}
+
+.subContainer::after {
+  content: '';
+  position: absolute;
+  top: 216px;
+  right: -20px;
+  width: 100px;
+  height: 100px;
+  z-index: -10;
+  -moz-transform: skew(22deg, -64deg);
+  -webkit-transform: skew(22deg, -64deg);
+  -o-transform: skew(22deg, -64deg);
+  -ms-transform: skew(22deg, -64deg);
+  transform: skew(22deg, -64deg);
+  background-color: #443686;
+}
+
+.subContainer {
+  width: 275px;
+  height: 475px;
+  border-bottom-right-radius: 60px;
+  border-top-left-radius: 60px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.box {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
+
+.boxNumero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.numero {
+  width: 137px;
+  height: 75px;
+  display: flex;
+  padding: 5px 10px 0;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  background-color: #6655bd;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  color: #ffffff;
+  position: relative;
+}
+
+.numero h4 {
+  position: absolute;
+  top: 17px;
+  left: 36px;
+  font-size: 22px;
+  transform: rotate(270deg);
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+.numero h1 {
+  font-size: 60px;
+}
+
+.circulo {
+  position: absolute;
+  top: 0;
+  left: 53px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: url('http://pm1.narvii.com/6311/da77016caf6d1211a4d769a05fceb208e1fe188a_00.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.descricao {
+  margin-top: 50px;
+}
+
+.descricao h4 {
+  text-align: end;
+  font-size: 30px;
+}
+
+.descricao p {
+  text-indent: 30px;
+}

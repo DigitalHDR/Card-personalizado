@@ -157,10 +157,10 @@ img {
 
 .circulo {
   position: absolute;
-  top: 0;
+  top: -40px;
   left: 53px;
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   border-radius: 100%;
   background: url('http://pm1.narvii.com/6311/da77016caf6d1211a4d769a05fceb208e1fe188a_00.jpg');
   background-repeat: no-repeat;
@@ -171,10 +171,10 @@ img {
 .circulo::before {
   content: '';
   position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 55px;
-  height: 55px;
+  top: -3px;
+  left: -2px;
+  width: 105px;
+  height: 105px;
   border-radius: 100%;
   transform: scale(1.2);
   box-shadow: 0px 0px 11.5px #e1e01f, 0px 0px 31px #e1761f;
@@ -248,5 +248,19 @@ img {
 
   .numero::after {
     right: -26px;
+  }
+
+  .circulo {
+    top: -29px;
+    left: 24px;
+    width: 90px;
+    height: 90px;
+  }
+  
+  .circulo::before {
+    top: -3px;
+    left: -3px;
+    width: 95px;
+    height: 95px;
   }
 }

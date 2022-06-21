@@ -17,6 +17,12 @@ body {
   font-family: 'Baloo Da 2', cursive;
 }
 
+audio {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .frenteEFundo {
   display: flex;
   align-items: center;

@@ -77,10 +77,9 @@ body {
   position: relative;
   top: -24px;
   right: -165px;
-  z-index: 1000;
   padding: 5px 10px 0;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   flex-direction: row;
   background-color: #ff824c;
   border-bottom-left-radius: 20px;
@@ -93,8 +92,8 @@ body {
 
 .numero h4 {
   position: absolute;
-  top: 17px;
-  left: 36px;
+  top: 12px;
+  left: 12px;
   font-size: 22px;
   transform: rotate(270deg);
   font-weight: 100;
@@ -185,6 +184,12 @@ body {
 
   .numero h4 {
     left: 9px;
+    top: 13px;
+    font-size: 20px;
+  }
+
+  .numero h1 {
+    font-size: 50px;
   }
 
   .descricao p {

@@ -17,6 +17,12 @@ body {
   font-family: 'Baloo Da 2', cursive;
 }
 
+audio {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .container {
   width: 300px;
   height: 500px;
@@ -39,7 +45,12 @@ body {
   height: 100px;
   z-index: -10;
   transform: skew(25deg, -64deg);
-  background-color: #e1e01f;
+  background: linear-gradient(
+    to bottom,
+    #e1e01f -66%,
+    #ff824c 81%,
+    #00356f 149%
+  );
 }
 
 .subContainer {
@@ -84,16 +95,41 @@ body {
   background-color: #ff824c;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
   color: #ffffff;
+  position: relative;
+}
+
+.numero::before {
+  content: '';
+  width: 23px;
+  height: 29px;
+  top: 64px;
+  right: 0px;
+  z-index: -1;
+  padding: 0px 0px 0;
+  background-color: #2f4374;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  position: absolute;
+}
+
+.numero::after {
+  content: '';
+  width: 23px;
+  height: 29px;
+  top: 29px;
+  right: -25px;
+  z-index: -2;
+  padding: 0px 0px 0;
+  background-color: #ff824c;
   position: relative;
 }
 
 .numero h4 {
   position: absolute;
   top: 12px;
-  left: 12px;
+  left: 0px;
   font-size: 22px;
   transform: rotate(270deg);
   font-weight: 100;
@@ -101,6 +137,8 @@ body {
 }
 
 .numero h1 {
+  position: relative;
+  left: 15px;
   font-size: 60px;
 }
 
@@ -127,12 +165,6 @@ body {
   border-radius: 100%;
   transform: scale(1.2);
   box-shadow: 0px 0px 11.5px #e1e01f, 0px 0px 31px #e1761f;
-}
-
-.df {
-  color: #e0de3b;
-  color: #00356f;
-  color: #ff824c;
 }
 
 .descricao {
@@ -169,7 +201,11 @@ body {
     right: 49px;
     transform: skew(0deg, 0deg);
     transform: rotate(45deg);
-    background-color: #00356f;
+    background: linear-gradient(
+      #08376d -66%,
+      #08376d 81%,
+      #00356f 149%
+    );
   }
 
   .numero {
@@ -195,5 +231,13 @@ body {
   .descricao p {
     text-indent: 30px;
     font-size: 14px;
+  }
+
+  .numero::before {
+    top: 61px;
+  }
+
+  .numero::after {
+    right: -26px;
   }
 }

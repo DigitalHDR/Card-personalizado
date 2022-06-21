@@ -17,10 +17,17 @@ body {
   font-family: 'Baloo Da 2', cursive;
 }
 
-audio {
+.frenteEFundo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
   position: absolute;
-  top: 0;
-  left: 0;
+  z-index: -100;
+  width: 100%;
+  max-width: 1000px;
 }
 
 .container {
@@ -201,11 +208,7 @@ audio {
     right: 49px;
     transform: skew(0deg, 0deg);
     transform: rotate(45deg);
-    background: linear-gradient(
-      #08376d -66%,
-      #08376d 81%,
-      #00356f 149%
-    );
+    background: linear-gradient(#08376d -66%, #08376d 81%, #00356f 149%);
   }
 
   .numero {
